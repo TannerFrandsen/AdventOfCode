@@ -40,4 +40,4 @@ def main(input_path, target):
 
 
 if __name__ == '__main__':
-    main(r'..\prompts\Day_01_Input.txt', 2020)
+    main(r'..\prompts\day_01_Input.txt', 2020)
