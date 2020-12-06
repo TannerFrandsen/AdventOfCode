@@ -9,6 +9,8 @@ on:
     branches:
       - main
       - '2020'
+    paths:
+      - '**.py'
 
 jobs:
   flake8_py3:
