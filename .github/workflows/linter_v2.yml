@@ -1,6 +1,10 @@
 name: Lint
 
 on:
+  workflow_dispatch:
+    branches:
+      - main
+      - '2020'
   push:
     branches:
       - main
