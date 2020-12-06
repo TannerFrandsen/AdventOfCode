@@ -9,15 +9,14 @@ def load_puzzle_data(file):
     return [seat_code.strip() for seat_code in file_data]
 
 
-FRONT = 'F'
-BACK = 'B'
-RIGHT = 'R'
-LEFT = 'L'
-
 def binary_search(seat_location, min, max):
+    FRONT = 'F'
+    BACK = 'B'
+    RIGHT = 'R'
+    LEFT = 'L'
     for character in seat_location:
         if character in [FRONT, LEFT]:
-            max = int((max + min)// 2)
+            max = int((max + min) // 2)
             min = min
         elif character in [BACK, RIGHT]:
             max = max
@@ -28,17 +27,16 @@ def binary_search(seat_location, min, max):
     return max
 
 
-
 def main(input_path):
     seat_locations = load_puzzle_data(input_path)
 
     seat_ids = []
-    print(f'Parsing seats...')
+    print('Parsing seats...')
     for seat_code in seat_locations:
         row = binary_search(seat_code[0:7], 0, 127)
         seat = binary_search(seat_code[7:], 0, 7)
-        seat_ids.append((row * 8 )+ seat)
-        
+        seat_ids.append((row * 8) + seat)
+
     print(f'The max seat Id is {max(seat_ids)}')
 
     possible_seats = set(range(min(seat_ids), max(seat_ids)))
@@ -46,8 +44,6 @@ def main(input_path):
 
     your_seat_id = list(possible_seats - filled_seats)[0]
     print(f'Your seat ID is {your_seat_id}')
-
-    
 
 
 if __name__ == '__main__':
