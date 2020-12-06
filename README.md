@@ -3,7 +3,7 @@ Advent of Code
 
 An event with coding challenges for each day before Christmas!!
 
-[![Licence](https://img.shields.io/github/license/justintime50/adventofcode-2020)](LICENSE)
+![Lint](https://github.com/TannerFrandsen/AdventOfCode/workflows/Lint/badge.svg?branch=2020)
 
 If you would like to play along see the [Advent of Code](https://adventofcode.com).
 
