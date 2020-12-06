@@ -30,7 +30,6 @@ def main(input_path, target):
 
     print(f'Unique answers: {count_unique_answers_among_group(groups)}')  # 6662
     print(f'Common answers: {count_common_answers_among_group(groups)}')  # 3382
-    print(f'Testing')
 
 
 if __name__ == '__main__':
