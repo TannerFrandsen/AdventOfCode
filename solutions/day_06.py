@@ -13,7 +13,7 @@ def load_puzzle_data(file):
 def count_unique_answers_among_group(groups):
     total = 0
     for group in groups:
-        total = total + len(set(''.join(group)))
+        total = total + len(  set(''.join(group)))
     return total
 
 
