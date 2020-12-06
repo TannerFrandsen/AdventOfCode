@@ -11,9 +11,11 @@ on:
       - '2020'
 
 jobs:
-  flake8_py3:
+  Flake8:
     runs-on: ubuntu-latest
     steps:
+      # Checkout Sources
+      - uses: actions/checkout@v2
       - name: Setup Python
         uses: actions/setup-python@v1
         with:
