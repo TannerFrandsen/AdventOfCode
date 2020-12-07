@@ -30,7 +30,7 @@ def find_three_numbers_sum_to_target(puzzle_input, target):
                 return first_num, second_num, complement
 
 
-def find_n_numbers_sum_to_target(target, puzzle_input, n, current_sum=0):
+def find_n_numbers_sum_to_target(target, puzzle_input, n, current_sum=0, result=[]):
     # this could be cleaned up to return the values insted of printing them
     if current_sum == target and n == 0:
         return True
@@ -42,7 +42,6 @@ def find_n_numbers_sum_to_target(target, puzzle_input, n, current_sum=0):
         filtered_list = copy.copy(puzzle_input)
         filtered_list.remove(x)
         if find_n_numbers_sum_to_target(target, filtered_list, n-1, current_sum):
-            print(x)
             return True
         else:
             current_sum = current_sum - x
