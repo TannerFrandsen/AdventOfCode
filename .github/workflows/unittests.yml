@@ -1,4 +1,4 @@
-name: Lint
+name: UnitTests
 
 on:
   workflow_dispatch:
@@ -11,7 +11,7 @@ on:
       - '2020'
 
 jobs:
-  Flake8:
+  RunUnitTests:
     runs-on: ubuntu-latest
     steps:
       # Checkout Sources
@@ -22,17 +22,8 @@ jobs:
           python-version: 3.7.9
           architecture: x64
 
-      - name: Install flake8
-        run: pip install flake8
-
       - name: Install pytest
         run: pip install pytest
-
-      - name: Run flake8
-        run: flake8
-
-      - name: run command
-        run: ls -laR
 
       - name: Run Tests
         run: python -m pytest

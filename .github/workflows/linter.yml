@@ -1,0 +1,29 @@
+name: Lint
+
+on:
+  workflow_dispatch:
+    branches:
+      - '2020'
+
+  push:
+    branches:
+      - main
+      - '2020'
+
+jobs:
+  Flake8:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout Sources
+      - uses: actions/checkout@v2
+      - name: Setup Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.7.9
+          architecture: x64
+
+      - name: Install flake8
+        run: pip install flake8
+
+      - name: Run flake8
+        run: flake8
