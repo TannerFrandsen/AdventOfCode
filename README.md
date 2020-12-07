@@ -4,6 +4,7 @@ Advent of Code
 An event with coding challenges for each day before Christmas!!
 
 ![Lint](https://github.com/TannerFrandsen/AdventOfCode/workflows/Lint/badge.svg?branch=2020)
+![UnitTests](https://github.com/TannerFrandsen/AdventOfCode/workflows/UnitTests/badge.svg?branch=2020)
 
 If you would like to play along see the [Advent of Code](https://adventofcode.com).
 
