@@ -1,4 +1,4 @@
-# Advent of Code day 05
+# Advent of Code day 07
 # Author: Tanner Frandsen
 # Date: 2020-12-07
 
