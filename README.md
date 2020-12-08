@@ -20,3 +20,4 @@ People I know
 Here are some of the people I know who are also joining in on the fun!
 
 - [Gage Larsen](https://github.com/gagelarsen/adventofcode)
+- [Nathan Swain](https://github.com/swainn/advent-of-code)
