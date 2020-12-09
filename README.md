@@ -11,13 +11,12 @@ If you would like to play along see the [Advent of Code](https://adventofcode.co
 The Event
 ---------
 Each day a challenge will be given.  In a branch corresponding to the year I will post my solution to the challenge.
-All of the prompts will be in a directory called `prompts`. Each solution will be in a directory called 
-`solutions` with the file name being the day of the challenge (`day_01.py`, `day_02.py`, etc.).
-The puzzle input will be in a directory called `input`.
+There will be a folder for each day which will contain the following files `prompt.txt`, `solution.py`, 
+and `puzzle_input.dat`. The tests are separate from the code in the `tests` directory.
 
 People I know
 -------------
 Here are some of the people I know who are also joining in on the fun!
 
-- [Gage Larsen](https://github.com/gagelarsen/adventofcode)
-- [Nathan Swain](https://github.com/swainn/advent-of-code)
+- [Gage](https://github.com/gagelarsen/adventofcode)
+- [Nathan](https://github.com/swainn/advent-of-code)
