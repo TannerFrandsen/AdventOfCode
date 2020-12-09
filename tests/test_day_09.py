@@ -4,7 +4,7 @@ from AdventOfCode.day09.solution import find_contiguous_range_extents
 
 
 def test_day_09():
-    puzzle_input = load_puzzle_data(r'AdventOfCode\day09\puzzle_input.dat')
+    puzzle_input = load_puzzle_data(r'AdventOfCode/day09/puzzle_input.dat')
 
     key_number = find_key_number(puzzle_input, 25)
     assert 507622668 == key_number

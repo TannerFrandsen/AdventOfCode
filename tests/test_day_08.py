@@ -4,7 +4,7 @@ from AdventOfCode.day08.solution import find_corrupt_command
 
 
 def test_day_08():
-    puzzle_input = load_puzzle_data(r'AdventOfCode\day08\puzzle_input.dat')
+    puzzle_input = load_puzzle_data(r'AdventOfCode/day08/puzzle_input.dat')
 
     valid, accumulator, command_idx = run_boot_commands(puzzle_input)
     assert not valid
