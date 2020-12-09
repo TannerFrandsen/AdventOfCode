@@ -1,8 +1,10 @@
-from ..solutions.day_08 import find_corrupt_command, run_boot_commands, load_puzzle_data
+from AdventOfCode.day08.solution import load_puzzle_data
+from AdventOfCode.day08.solution import run_boot_commands
+from AdventOfCode.day08.solution import find_corrupt_command
 
 
-def test_day_01():
-    puzzle_input = load_puzzle_data(r'input/day_08.txt')
+def test_day_08():
+    puzzle_input = load_puzzle_data(r'AdventOfCode\day08\puzzle_input.dat')
 
     valid, accumulator, command_idx = run_boot_commands(puzzle_input)
     assert not valid

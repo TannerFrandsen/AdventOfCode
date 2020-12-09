@@ -1,8 +1,10 @@
-from ..solutions.day_09 import find_key_number, find_contiguous_range_extents, load_puzzle_data
+from AdventOfCode.day09.solution import load_puzzle_data
+from AdventOfCode.day09.solution import find_key_number
+from AdventOfCode.day09.solution import find_contiguous_range_extents
 
 
-def test_day_01():
-    puzzle_input = load_puzzle_data(r'input/day_09.txt')
+def test_day_09():
+    puzzle_input = load_puzzle_data(r'AdventOfCode\day09\puzzle_input.dat')
 
     key_number = find_key_number(puzzle_input, 25)
     assert 507622668 == key_number
