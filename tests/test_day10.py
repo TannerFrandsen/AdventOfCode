@@ -3,7 +3,7 @@ from AdventOfCode.day10.solution import count_jolt_differences
 from AdventOfCode.day10.solution import count_valid_adapter_configurations
 
 
-def test_day_09_part1():
+def test_day_10():
     puzzle_input = load_puzzle_data(r'AdventOfCode/day10/example_input.dat')
     addapter_deltas = count_jolt_differences(puzzle_input, 0, max(puzzle_input) + 3)
     assert 0 == addapter_deltas.count(0)

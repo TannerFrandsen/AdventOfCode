@@ -3,7 +3,7 @@ from AdventOfCode.day08.solution import run_boot_commands
 from AdventOfCode.day08.solution import find_corrupt_command
 
 
-def test_day_08():
+def test_day08():
     puzzle_input = load_puzzle_data(r'AdventOfCode/day08/puzzle_input.dat')
 
     valid, accumulator, command_idx = run_boot_commands(puzzle_input)

@@ -3,7 +3,7 @@ from AdventOfCode.day11.solution import stablize_seating
 from AdventOfCode.day11.solution import stablize_seating_line_of_sight
 
 
-def test_day_09_part1():
+def test_day11():
     puzzle_input = load_puzzle_data(r'AdventOfCode/day11/example_input.dat')
     open_seats_after_stabilizing, iterations = stablize_seating(puzzle_input)
     assert 37 == open_seats_after_stabilizing
